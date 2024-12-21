@@ -135,6 +135,8 @@ const MainVideoPage = ()=>{
                 const pc = streamsRef.current[s].peerConnection;
                 pc.addIceCandidate(iceC);
                 console.log("Added an iceCandidate to existing page presence")
+                setShowCallInfo(false)
+                
             }
         }
     }
